@@ -1,0 +1,135 @@
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  background-color: #333;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  justify-content: right;
+  align-items: right;
+  bottom: 0;
+  width: 100%;
+  
+  overflow: hidden;
+  background-color: #333;
+}
+
+footer li {
+  float: left;
+  align-items: center;
+  justify-content: center;
+}
+
+html{
+  background-color: #333;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+footer li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+main {
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto; /* Centers the element horizontally */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax-container1 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  
+  justify-content: center;
+  
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--color);
+  text-align: center;
+}
+
+.parallax-container2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 4rem 0;
+  background-color: #434343;
+  gap: 0.4em;
+}
+
+.parallax-container3 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 9rem 0;
+  gap: 0.4em;
+}
+
+
+.parallax-container4 {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 12rem 0;
+  background-image: url(https://i.natgeofe.com/n/c9107b46-78b1-4394-988d-53927646c72b/1095.jpg?w=748&h=562);
+  gap: 0.4em;
+}
+
+.title{
+  color: white;
+  background-color: rgb(221, 221, 221, 0);
+}
+
+section h2 {
+  background-color: rgb(221, 221, 221, 0.5);
+  
+}
+
+
+section p {
+  width: 70%;
+
+  background-color: rgba(200, 209, 255, 0.8);
+  font-size: 20px;
+  text-align: left;
+}
