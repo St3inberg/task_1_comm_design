@@ -6,7 +6,12 @@ header ul {
   position: fixed;
   overflow: hidden;
   top: 0px;
-  background-color: #333;
+  background-color: #005b63;
+}
+
+body{
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 footer ul {
@@ -18,9 +23,9 @@ footer ul {
   align-items: right;
   bottom: 0;
   width: 100%;
-  
+
   overflow: hidden;
-  background-color: #333;
+  background-color: #005b63;
 }
 
 footer li {
@@ -29,8 +34,8 @@ footer li {
   justify-content: center;
 }
 
-html{
-  background-color: #333;
+html {
+  background-color: rgb(0, 109, 119);
 }
 
 li a {
@@ -51,7 +56,7 @@ footer li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: rgb(131, 197, 190);
 }
 
 main {
@@ -59,6 +64,14 @@ main {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0 auto; /* Centers the element horizontally */
+}
+
+img {
+  border-radius: 0.375rem;
+}
+
+h2 {
+  font-size: 50px;
 }
 
 section {
@@ -74,26 +87,25 @@ section {
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  
+
   justify-content: center;
-  
 
   /*  this is where the magic happens:  */
   background-attachment: fixed;
 
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg);
+  background-image: url("Images/30YearDoor.png");
   background-position: center;
   background-size: cover;
   color: var(--color);
   text-align: center;
 }
 
-.parallax-container2 {
+.parallax-standard {
   flex-direction: row;
   flex-wrap: wrap;
 
   padding: 4rem 0;
-  background-color: #434343;
+  background-color: rgb(131, 197, 190);
   gap: 0.4em;
 }
 
@@ -105,31 +117,149 @@ section {
   gap: 0.4em;
 }
 
-
 .parallax-container4 {
+  text-align: center;
   flex-direction: row;
   flex-wrap: wrap;
 
   padding: 12rem 0;
-  background-image: url(https://i.natgeofe.com/n/c9107b46-78b1-4394-988d-53927646c72b/1095.jpg?w=748&h=562);
+  background-image: url(Images/Man.png);
+  background-position: center bottom; 
+
   gap: 0.4em;
 }
 
-.title{
-  color: white;
-  background-color: rgb(221, 221, 221, 0);
+.parallax-container5 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 12rem 0;
+  background-image: url(Images/AcrossWater.png);
+  gap: 0.4em;
 }
 
-section h2 {
-  background-color: rgb(221, 221, 221, 0.5);
+.parallax-container6 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 24rem 0;
+  background-image: url(Images/women.png);
+  gap: 0.4em;
+  background-position-y: -40px;
+}
+
+.parallax-container7 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 24rem 0;
+  background-image: url(Images/SideBuilding.png);
+  background-position-y: -40px;
+  gap: 0.4em;
+}
+
+.parallax-container8 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   
+  padding: 24rem 0;
+  background-image: url(Images/Model.png);
+  gap: 0.4em;
+  background-position: center bottom;
+  background-position-y: -100px;
 }
 
+.parallax-container9 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 24rem 0;
+  background-image: url(Images/College.png);
+  background-position-y: -100px;
+  gap: 0.4em;
+}
+
+.parallax-container10 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 24rem 0;
+  background-image: url(Images/Above.png);
+  gap: 0.4em;
+}
+.parallax-container11 {
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 24rem 0;
+  background-image: url(Images/AcrossWater2.png);
+  background-position-y: -150px;
+  gap: 0.4em;
+}
+
+.title {
+  color: rgb(0, 56, 61);
+  background-color: rgb(255, 210, 195, 0.8);
+}
+
+.title2 {
+  color: rgb(255, 221, 210);
+}
 
 section p {
   width: 70%;
-
-  background-color: rgba(200, 209, 255, 0.8);
-  font-size: 20px;
+  border-radius: 0.375rem;
+  padding: 15px;
+  background-color: rgb(131, 197, 190, 0.8);
+  font-size: 25px;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul, footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header ul li, footer ul li {
+    float: none;
+    width: 100%;
+  }
+  footer li a{
+    padding: 5px 10px;
+  }
+
+  li a {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  main {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  section p {
+    width: 90%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .parallax-container1, .parallax-standard, .parallax-container3, .parallax-container4, .parallax-container5, .parallax-container6, .parallax-container7, .parallax-container8, .parallax-container9, .parallax-container10, .parallax-container11 {
+    padding: 10rem 0;
+  }
 }
