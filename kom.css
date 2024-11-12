@@ -191,7 +191,10 @@ section {
   flex-wrap: wrap;
 
   padding: 24rem 0;
-  background-image: url(Images/Above.png);
+  background-position-y: -100px;
+  background-position-x: -200px;
+
+  background-image: url(Images/Image.png);
   gap: 0.4em;
 }
 .parallax-container11 {
